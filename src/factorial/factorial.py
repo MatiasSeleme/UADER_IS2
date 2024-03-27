@@ -15,12 +15,16 @@ def factorial(num):
 def calcular_factoriales(rango):
     desde, hasta = map(int, rango.split('-'))
     resultados = []
+    if desde == 0:
+        desde = 1
+    if hasta == 0: 
+        hasta = 60
     for num in range(desde, hasta + 1):
         resultados.append(factorial(num))
     return resultados
 
 if len(sys.argv) < 2:
-    rango = input("Ingrese el rango en el formato desde-hasta (ej. 4-8): ")
+    rango = input("Ingrese el rango en el formato desde-hasta: ")
 else:
     rango = sys.argv[1]
 
