@@ -1,3 +1,5 @@
+"Este es un programa que nombra los numeros primos del 1 al 100"
+
 lower = 1
 upper = 100
 
