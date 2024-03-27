@@ -1,4 +1,4 @@
-"Este es un programa que nombra los numeros primos del 1 al 100"
+"Este es un programa que nombra los numeros primos del 1 al 1000"
 
 lower = 1
 upper = 100
