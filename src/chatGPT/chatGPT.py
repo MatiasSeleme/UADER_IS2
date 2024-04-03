@@ -1,6 +1,6 @@
 import openai
 
-api_key = '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'
+api_key = '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'
 
 def interactuar_con_chatGPT(consulta):
     openai.api_key = api_key
