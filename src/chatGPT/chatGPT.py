@@ -7,7 +7,7 @@ def configure():
     load_dotenv()
 
 def interactuar_con_chat_gpt(consulta):
-    openai.api_key = os.getenv("OPENAI_API_KEY")  # Reemplaza "OPENAI_API_KEY" con el nombre real de tu variable de entorno
+    openai.api_key = os.getenv("OPENAI_API_KEY") 
     mensajes = [
         {"role": "user", "content": "You: " + consulta}
     ]
@@ -29,7 +29,7 @@ def ejecutar_pylint(nombre_archivo):
         print("Error al ejecutar pylint:", e)
 
 def main():
-    configure()  # Llamar a la función configure para cargar las variables de entorno
+    configure()
     buffer_consultas = []
 
     while True:
