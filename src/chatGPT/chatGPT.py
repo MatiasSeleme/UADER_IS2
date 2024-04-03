@@ -1,6 +1,7 @@
+import os
 import openai
 
-api_key = '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'
+api_key = os.environ.get('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')
 
 def interactuar_con_chatGPT(consulta):
     openai.api_key = api_key
